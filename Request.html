@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style-min.css">
+    <title>Request</title>
+    <style>
+      body{
+        background:rgba(0,0,0,0.7)url("https://www.pharmasolutions-int.com/wp-content/uploads/2022/06/World-Blood-Donor-Day-2022_.jpg");
+    width:1366px;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: darken;
+        background-attachment: fixed;
+      }
+   input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+    input[type=text]:focus, input[type=password]:focus,nput[type=number] {
+        background-color:antiquewhite;
+        outline: none;
+    }
+.navbar {
+  overflow: hidden;
+  background-color: ;
+}
+
+.navbar a {
+  float: left;
+  font-size: 21px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    .custom-card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  }
+  .custom-card-titl {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  }
+  .custom-navbar {
+  margin-bottom: 0.25rem;
+}
+
+.custom-navbar .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.custom-navbar .navbar-expand-lg {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.custom-navbar .navbar-dark {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.custom-navbar .danger-color {
+  color: #dc3545;
+}
+.custom-navbar-brandd {
+  font-size: 1.5rem;
+  font-weight: none;
+  color: #fff;
+  background-color: #f7786b;
+}
+.custom-navbar-toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+.custom-py-5 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.custom-px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container1 {
+     position: absolute;
+    left: 50%; transform: translateX(-50%);
+    margin: 20px;
+    max-width: 350px;
+    padding: 2%;
+    background-color: white;
+}
+.btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.container2 {
+     position: absolute;
+    left: 50%; transform: translateX(-50%);
+    margin: 20px;
+    max-width: 400px;
+    padding: 2%;
+    background-color: white;
+}
+
+::placeholder{
+  color: #A9A9A9;
+  }
+  .dropbtn {
+  background-color: ;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1px 35px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+::placeholder{
+</style>
+    
+</head>
+
+
+<body>
+    <nav class="custom-navbar navbar danger-color navbar-dark   navbar-expand-lg "> 
+     <a class=" custom-navbar-brandd" href="#">Blood Bank</a>
+   <a href="Home.html">Home</a>
+    <a href="Home.html#section1">Appointment</a>
+    <div class="dropdown">
+    <a href="login.html" class="dropbtn">Login<i class="fa fa-caret-down"></i></a>
+ <div class="dropdown-content">
+    <a href="loginadmin.html">As Admin</a>
+    <a href="login.html">As Donor</a>
+  </div>
+</div>
+     <a href="signupDbms.html">Sign Up</a>
+  <a href="Request.html">Request</a>
+  <a href="inventory.html">Blood Bank</a>
+</nav>
+    
+        <br><br>
+        <form class="container2 ">
+            <h1 align="center">REQUEST</h1>
+             <label for="email"><b>Hospital Name</b></label>
+            <input type="text" placeholder="Hospital Name" name="email" required>
+            <label for="bloodtype"><b>Blood Type</b></label>
+            <input type="text" placeholder="Enter Blood Type" name="bloodtype" list="Blood Type" required>
+                                                <datalist id="Blood Type">
+                                                  <option>A+</option>
+                                                  <option>A-</option>
+                                                  <option>B+</option>
+                                                  <option>B-</option>
+                                                  <option>AB+</option>
+                                                  <option>AB-</option>
+                                                  <option>O+</option>
+                                                  <option>O-</option>
+                                                </datalist>
+            <label for="components"><b>Components</b></label>
+            <input type="text" name="" list="comp" placeholder="Enter Components" required>
+                                        <datalist id="comp">
+                                                    <option>Plasma</option>
+                                                    <option>Platelets</option>
+                                                    <option>Red Blood Cells</option>
+                                                    <option>White Blood Cells</option>
+                                        </datalist>
+            <label for="amount"><b>Amount</b></label>
+            <input type="number" placeholder="Enter Amount" name="Amount" min='0' max="15" required>
+            <button type="submit" class="btn">Request</button>
+            <h6 class="text-center">Only Hospitals Are Eligible</h6>
+        </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="page-footer font-small danger-color pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Help Saves Life.<br>donate blood.</h5>
+                    <p>Blood Bank is a web based blood Donation platform which connects thousands of blood donors in three
+                        simple steps. Bonded ensures hassle free blood donation and privacy of a blood donor. A blood
+                        donor can select any specific date and location to donate blood and find a suitable person who
+                        needs blood. </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Contact Us</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="mailto:bloodbank18@gmail.com"><i
+                                    class="fas fa-envelope-open mr-3"></i>bloodbank18@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fas fa-location-arrow mr-3"></i>Islamabad,Pakistan 799130</a>
+                        </li>
+                        <li>
+                            <a href="#!"><i class="fas fa-tty mr-3"></i>+91-123-456-7890</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Support Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#https://www.redcrossblood.org/">https://www.redcrossblood.org/</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#https://www.mayoclinic.org/tests-procedures/blood-donation/about/pac-20385144">https://www.mayoclinic.org/</a>
+                        </li>
+                        <li>
+                            <a href="#!">Credits</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2023 Copyright:
+            <a href="index.html"> Blood Bank</a> All Rights Reserved
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+</html>
